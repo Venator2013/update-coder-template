@@ -42,7 +42,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: curl -fsSL $CODER_URL/bin/coder-linux-amd64 -o /usr/local/bin/coder && chmod +x /usr/local/bin/coder
+    - run: curl -fsSL https://code-server.dev/install.sh
       shell: bash
       env:
         CODER_URL: ${{ inputs.url }}
