@@ -42,7 +42,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: curl -fsSL https://code-server.dev/install.sh
+    - run: curl -L https://coder.com/install.sh | sh
       shell: bash
       env:
         CODER_URL: ${{ inputs.url }}
