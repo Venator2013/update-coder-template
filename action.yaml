@@ -38,7 +38,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: curl -L https://coder.com/install.sh | sh -- --method=standalone
+    - run: curl -L https://coder.com/install.sh | sh -s -- --method=standalone
       shell: bash
       env:
         CODER_URL: ${{ inputs.url }}
